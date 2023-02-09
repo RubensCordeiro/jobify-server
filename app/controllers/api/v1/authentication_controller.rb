@@ -1,14 +1,13 @@
+# frozen_string_literal: true
+
 module Api
   module V1
     class AuthenticationController < ApplicationController
-      def register
-      end
-      
-      def login
-      end
+      def register; end
 
-      def update_user
-      end
+      def login; end
+
+      def update_user; end
     end
   end
-end    
+end
