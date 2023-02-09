@@ -5,6 +5,10 @@ Rails.application.routes.draw do
     namespace :v1 do
       resources :jobs
 
+      scope :jobs do
+        get 'show_stats', to: "jobs#showStats"
+      end
+
       scope :auth do
         post '/register', to: 'authentication#register'
         post '/login', to: 'authentication#login'

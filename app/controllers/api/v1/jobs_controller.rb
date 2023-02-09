@@ -12,6 +12,9 @@ module Api
       def update; end
 
       def destroy; end
+
+      def showStats
+      end
     end
   end
 end
