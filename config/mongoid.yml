@@ -1,6 +1,21 @@
 development:
   clients:
     default:
-      uri: <%= ENV["MONGO_URL"] %>
+      database: jobify_dev
+      hosts:
+        - 0.0.0.0:27017
       options:
-        server_selection_timeout: 5
+        server_selection_timeout: 1
+        user: "mongo"
+        password: "mongo"
+
+test:
+  clients:
+    default:
+      database: jobify_test
+      hosts:
+        - 0.0.0.0:27017
+      options:
+        server_selection_timeout: 1
+        user: "mongo"
+        password: "mongo"
