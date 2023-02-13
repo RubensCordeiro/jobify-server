@@ -6,7 +6,7 @@ Rails.application.routes.draw do
       resources :jobs
 
       scope :jobs do
-        get 'show_stats', to: "jobs#showStats"
+        get 'show_stats', to: 'jobs#showStats'
       end
 
       scope :auth do

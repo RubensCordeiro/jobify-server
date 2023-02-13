@@ -13,8 +13,7 @@ module Api
 
       def destroy; end
 
-      def showStats
-      end
+      def showStats; end
     end
   end
 end
