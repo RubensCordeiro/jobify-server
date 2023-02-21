@@ -62,10 +62,10 @@ class User
   index({ uid: 1, provider: 1 }, { name: 'uid_provider_index', unique: true, background: true })
   # index({ unlock_token: 1 }, { name: 'unlock_token_index', unique: true, sparse: true, background: true })
 
-  validates_presence_of :name, :email, :password
+  validates_presence_of :name
   validates_uniqueness_of :email
 
   validates :name, length: { minimum: 3, maximum: 20 }
-  validates :password, length: { minimum: 5 }
+  # validates :password, length: { minimum: 5 }
   validates :email, format: { with: URI::MailTo::EMAIL_REGEXP }
 end
