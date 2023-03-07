@@ -15,7 +15,7 @@ class User
 
   ## Non Devise Fields
   field :name, type: String
-  field :lastName, type: String
+  field :last_name, type: String
   field :location, type: String
 
   ## Database authenticatable
